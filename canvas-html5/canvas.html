@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <br> <br> 
+    <canvas id="dibujo" width="400" height="400" style="border: 2px solid black"></canvas><!--Es para crear gráficos, necesita de la ayuda de Javascript. Vino con esta versión de html5
+    Después de agregar el 'id', debo especificar mi espacio de trabajo con width y height.
+    Le coloco estilos css en la misma línea para ver mi espacio de trabajo demarcado-->
+    <!--El texto que crearemos no es texto en sí, sino un gráfico con forma de texto-->
+    
+    <script> 
+
+        var a = document.getElementById("dibujo");
+        var ctx = a.getContext  ("2d"); 
+        ctx.font = "28px Arial";
+        ctx.fillStyle = "violet";
+        ctx.fillText("Conociendo CANVAS  U.U", 20, 70);
+
+    </script> <!--Traemos código JS. Tengo que tener en primer lugar una "variable madre", acá se le da el nombre de 'a'. Tengo que traer luego el 'document.getElementBy Id' para poder plasmarlo en el navegador, el cual necesito combinarlo con mi código de Canvas, que lo identifiqué arriba con: id="dibujo".
+    Lo que se hizo hasta ahora, fue crear la estructura o crear el permiso para poder adaptarlo con html, por ellonada aun es visible.
+    Posteriormente creamos la variable que tiene un nombre peculiar:'ctx', en la cual llamamos a la variable 'a' y traemos una función: getContext(""), para limitar lo que vamos a hacer, por eso utilizamos el 2d, que son gráficos comunes. Con todo esto ya tenemos la estructura montada.
+    Ahora creamos el objeto:
+     Lo hacemos llamando a contexto que lleva el nombre de 'ctx' y traemos propiedades: '.font', porque escribiremos texto. Después del signo igual y entre comillas, va el tamaño y tipo de letra que usaremos
+     Posteriormente llamamos otra vez a 'ctx' y asignamos un color con '.fillStyle'.Para terminar, se escribe lo que queres que aparezca en la pantalla, utilizando '.fillText("")' y debemos aclarar también, dentro de qué parte del recuadro de trabajo, queremos que el texto aparezca:
+     Primero asignamos la posición de izq. a der.(23), y luego la altura(40)-->       
+
+        <h1>Esto sí es texto real</h1>
+
+        
+</body>
+</html>

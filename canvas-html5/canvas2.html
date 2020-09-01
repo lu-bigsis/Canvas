@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas2</title>
+</head>
+<body>
+    <br><br> <br> 
+        <canvas id="dibujo" width="350" height="200" style="border: 4px solid rgb(132, 5, 5)"></canvas>
+
+        <script>
+
+            var a = document.getElementById("dibujo");
+            var ctx = a.getContext  ("2d"); 
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.strokeStyle = "blue";
+            ctx.stroke();
+
+        </script>
+
+        <!--Las primeras 2 líneas son elementales.
+        Luego volvemos a llamar a ctx..
+        '.beginPath()'.
+    Después decimos las posiciones que deben tener las líneas en 'ctx.arc (95, 50, 40, 0); Llamo a la función 'arc'. Las medidas son valores aritméticos en coordinación con la posición del objeto en el lugar de trabajo, con el recuadro rojo. Se le agrega el radio y Pi: 2 * Math.PI.
+    'ctx.stroke()'
+    -->
+</body>
+</html>
